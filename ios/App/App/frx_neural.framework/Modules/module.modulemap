@@ -1,0 +1,6 @@
+framework module frx_neural {
+  umbrella header "frx_neural.h"
+
+  export *
+  module * { export * }
+}

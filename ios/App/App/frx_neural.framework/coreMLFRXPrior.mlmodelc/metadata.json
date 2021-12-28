@@ -1,0 +1,91 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 2)",
+        "shortDescription" : "",
+        "shape" : "[2]",
+        "name" : "output1",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 12)",
+        "shortDescription" : "",
+        "shape" : "[12]",
+        "name" : "output2",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 3)",
+        "shortDescription" : "",
+        "shape" : "[3]",
+        "name" : "output3",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 2)",
+        "shortDescription" : "",
+        "shape" : "[2]",
+        "name" : "output4",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 1,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "Flatten" : 1,
+      "Softmax" : 2,
+      "ActivationPReLU" : 34,
+      "Add" : 10,
+      "BatchNorm" : 51,
+      "Convolution" : 51,
+      "InnerProduct" : 4,
+      "PaddingConstant" : 5
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+
+    },
+    "generatedClassName" : "coreMLFRXPrior",
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 3 × 128 × 128)",
+        "shortDescription" : "",
+        "shape" : "[3, 128, 128]",
+        "name" : "input1",
+        "type" : "MultiArray"
+      }
+    ],
+    "method" : "predict"
+  }
+]

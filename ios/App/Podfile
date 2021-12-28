@@ -1,0 +1,44 @@
+source 'https://github.com/Banuba/specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '12.0'
+use_frameworks!
+
+# workaround to avoid Xcode caching of Pods that requires
+# Product -> Clean Build Folder after new Cordova plugins installed
+# Requires CocoaPods 1.6 or newer
+install! 'cocoapods', :disable_input_output_paths => true
+
+def capacitor_pods
+  pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
+  pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
+  pod 'CapacitorApp', :path => '../../node_modules/@capacitor/app'
+  pod 'CapacitorHaptics', :path => '../../node_modules/@capacitor/haptics'
+  pod 'CapacitorKeyboard', :path => '../../node_modules/@capacitor/keyboard'
+  pod 'CapacitorStatusBar', :path => '../../node_modules/@capacitor/status-bar'
+  pod 'OpenCV2', '~> 4.3.0'
+  pod 'BanubaVideoEditorSDK', '1.20.1'
+  pod 'BanubaMusicEditorSDK', '1.20.1'
+  pod 'BanubaOverlayEditorSDK', '1.20.1'
+  pod 'BanubaSDKSimple', '1.20.1'
+  pod 'BanubaSDKServicing', '1.20.1'
+  pod 'VideoEditor', '1.20.1'
+  pod 'BanubaUtilities', '1.20.1'
+  pod 'BanubaVideoEditorEffectsSDK', '1.20.1'
+  pod 'BanubaLicenseServicingSDK', '1.20.1'
+  pod 'BanubaTokenStorageSDK', '1.20.1'
+  pod 'BNBLicenseUtils', '1.20.1'
+  pod 'BanubaARCloudSDK', '1.20.1'
+  pod 'BanubaAudioBrowserSDK', '1.20.1'
+  pod 'BanubaVideoEditorGallerySDK', '1.20.1'
+  pod 'BanubaEffectPlayer', '1.20.0'
+  pod 'BanubaSDK', '1.20.1'
+  pod 'BanubaVideoEditorTrimSDK', '1.20.1'
+  pod 'lottie-ios'
+  pod "BSImagePicker"
+end
+
+target 'App' do
+  capacitor_pods
+  # Add your Pods here
+end

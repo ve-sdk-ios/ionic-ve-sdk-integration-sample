@@ -1,0 +1,64 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "FRX2D",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 6)",
+        "shortDescription" : "",
+        "shape" : "[6]",
+        "name" : "output1",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float32",
+    "modelParameters" : [
+
+    ],
+    "author" : "ruslan.asaula@banuba.com",
+    "specificationVersion" : 1,
+    "license" : "CopyRight LLC Banuba Development",
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 3 × 512 × 512)",
+        "shortDescription" : "",
+        "shape" : "[3, 512, 512]",
+        "name" : "input1",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+
+    },
+    "generatedClassName" : "coreMLSSD",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 3,
+      "Softmax" : 1,
+      "ActivationPReLU" : 25,
+      "Permute" : 16,
+      "BatchNorm" : 25,
+      "Convolution" : 39,
+      "Reshape" : 15,
+      "PoolingMax" : 2
+    },
+    "method" : "predict"
+  }
+]
